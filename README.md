@@ -60,22 +60,61 @@
 
 ![](images/vpc13.png)
 
-##### 3) Then add a destination and target. The target I used was the internet gateway created earlier. Then click save routes
+##### 3) Then add a destination and target. The target I used was the internet gateway created earlier. Then click save routes.
 
 ![](images/vpc14.png)
 
-##### 4) One the public route click on subnet associations and then edit subnet associations  
+##### 4) One the public route click on subnet associations and then edit subnet associations.
 
 ![](images/vpc15.png)
 
-##### 5) Select the public subnet and click on save
+##### 5) Select the public subnet and click on save.
 
 ![](images/vpc16.png)
 
 ## Creating a Network ACL
 
-##### 1) On the left hand side toolbar under security click on Network ACLs and then click create network ACL
+##### 1) On the left hand side toolbar under security click on Network ACLs and then click create network ACL.
 
 ![](images/vpc17.png)
 
-##### 1)
+##### 2) Enter a name tag. Remember naming conventions I added NACL into this nametag. I selected the VPC created previously and clicked on create.
+
+![](images/vpc18.png)
+
+##### 3) I then clicked edit inbound rules of the NACL just created and added the following:
+
+![](images/vpc19.png)
+
+##### 4) I then clicked on edit outbound rules and added the following. I allowed all traffic out. I then clicked save.
+
+![](images/vpc20.png)
+
+##### 5) Then click on subnet associations and edit subnet associations.
+
+![](images/vpc21.png)
+
+##### 6) In the subnet associations select the public subnet created earlier and select edit 
+
+![](images/vpc22.png)
+
+## Creating a new EC2 Instance to check the VPC is working
+
+##### 1) I created a new EC2 Instance and went through the configuration. One the page below remember to add the VPC and subnet previously created.
+
+![](images/vpc23.png)
+
+##### 2) Once the EC2 instance has been created I then SSH into the VM using the VM IP address
+```python
+ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@VM_IP_ADRESS
+```
+
+![](images/vpc24.png)
+
+##### 3) I went into root using ```sudo su``` and then installed Nginx on the VM using ``` apt-get install nginx```
+
+![](images/vpc25.png)
+
+##### 4) sing the EC2 instances IP address we can see Nginx has installed succesfully. This means our VM has access to the internet
+
+![](images/vpc26.png)

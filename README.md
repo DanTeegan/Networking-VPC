@@ -130,6 +130,6 @@ ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@VM_IP_ADRESS
 
 ![](images/vpc25.png)
 
-##### 4) sing the EC2 instances IP address we can see Nginx has installed succesfully. This means our VM has access to the internet
+##### 4) Using the EC2 instances IP address we can see Nginx has installed succesfully. This means our VM has access to the internet
 
 ![](images/vpc26.png)

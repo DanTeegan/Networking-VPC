@@ -5,6 +5,21 @@
 - Region is a close cluster of data centres.
 - Within the region we have availability zone, which are logically connected but physically segregated data centres inside a region.
 
+### INGRESS – Inbound
+- SSH for us and automation servers
+- Dev ports for us
+- Internet ports for the world
+
+### EGRESS – Outbound 
+- default (0.0.0.0)
+
+### NACL
+in NACL you Need to set outbound rules. By default, outbound traffic is denied
+
+Rules number matter, and you can deny IP as well as allow
+
+
+
 ## Creating the VPC
 #### 1) Search for VPC in the AWS dashboard and click VPC
 

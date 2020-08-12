@@ -18,6 +18,14 @@ in NACL you Need to set outbound rules. By default, outbound traffic is denied
 
 Rules number matter, and you can deny IP as well as allow
 
+### Important Terninology
+- VPC - Virtual Private Cloud in AWS to launch computing resources.
+- IGW - Internet gateway, attached to the VPC and allows internet into the VPC via route table.
+- Subnet - Internal networking
+- NACLs - Network Access Control list, this is an optional layer of security for your machine. (A firewall at the level of a subnet)
+- Route Tables - Contains a set of rules, called routes that determine where network traffic from a subnet or gateway is directed.
+- SG - Security Group / Firewall
+- EC2 - Amazon Elastic Compute Cloud
 
 
 ## Creating the VPC

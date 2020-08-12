@@ -14,6 +14,42 @@
 - default (0.0.0.0)
 
 
+### N-Tier Architecture
+
+n = any number
+division of system into logical tiers
+usually done with networking, and increase robustness and flexibility
+app tier, db tier. Flexibility created due to
+app tier contains JS server
+db tier containts mongo db
+
+#### mutable vs immutable
+
+instagram app is immutable as layout is always same.
+so can create multiple app machines if one goes down, easy to replicate/scale up and down
+database is mutable, may go down and lose some data
+one is main database, others take other is needed
+more servers to ensure less down time
+
+#### monolith archiecture
+
+single "block" network
+eg. on server running BD + logic + presentation etc.
+mainframe = JS server running everything
+server and website on same mainframe meanes if any of the components fail then website goes down
+associated costs with that
+no flexibility or robustness, high costs, low ease of use
+
+#### micro services business example
+
+tesco contracted us to handle all cheese sales
+API tier accessed to and from tesco
+This then interacts with db tier
+app tier interacts with db tier alongside CRUD guidelines
+create, record, update delete
+micros services would be to break down websites functions into differnt servers
+e.g internally adding more cheese and externally buying more cheese
+
 ### Important Terninology
 - VPC - Virtual Private Cloud in AWS to launch computing resources.
 - IGW - Internet gateway, attached to the VPC and allows internet into the VPC via route table.

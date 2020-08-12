@@ -27,6 +27,13 @@ Rules number matter, and you can deny IP as well as allow
 - SG - Security Group / Firewall
 - EC2 - Amazon Elastic Compute Cloud
 
+### what is a VPC?
+
+- a vpc is a virtual private cloud, where can define a virtual network to launch aws resoucres in
+- tier 2 means seperating servers into app and db for example
+- this creates a multi tier architecture and is therefore more robust
+
+
 
 ## Creating the VPC
 #### 1) Search for VPC in the AWS dashboard and click VPC

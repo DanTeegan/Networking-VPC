@@ -1,4 +1,4 @@
-## Creating a Bastion server and entering DB instance through bastion instance please click here](https://github.com/DanTeegan/Networking-VPC/blob/master/Bastion_Setup_With_DB_Instance.md)
+## [Creating a Bastion server and entering DB instance through bastion instance please click here](https://github.com/DanTeegan/Networking-VPC/blob/master/Bastion_Setup_With_DB_Instance.md)
 
 # Networking
 

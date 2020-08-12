@@ -13,10 +13,6 @@
 ### EGRESS – Outbound 
 - default (0.0.0.0)
 
-### NACL
-in NACL you Need to set outbound rules. By default, outbound traffic is denied
-
-Rules number matter, and you can deny IP as well as allow
 
 ### Important Terninology
 - VPC - Virtual Private Cloud in AWS to launch computing resources.
@@ -27,12 +23,30 @@ Rules number matter, and you can deny IP as well as allow
 - SG - Security Group / Firewall
 - EC2 - Amazon Elastic Compute Cloud
 
-### what is a VPC?
+### What is a VPC?
 
 - a vpc is a virtual private cloud, where can define a virtual network to launch aws resoucres in
 - tier 2 means seperating servers into app and db for example
 - this creates a multi tier architecture and is therefore more robust
 
+### What is a internet gateway? IGW
+
+An internet gateway serves two purposes: to provide a target in your VPC route tables for internet-routable traffic, and to perform network address translation (NAT) for instances that have been assigned public IPv4 addresses. An internet gateway supports IPv4 and IPv6 traffic.
+
+### What is a Subnet?
+
+- a segment of a VPC’s IP address range where you can place groups of isolated resources
+- can be used to limit ips used
+
+### What is a route table?
+
+A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed.
+
+### What is Network ACL?
+
+- in NACL you Need to set outbound rules. By default, outbound traffic is denied
+
+- Rules number matter, and you can deny IP as well as allow
 
 
 ## Creating the VPC
